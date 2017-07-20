@@ -2,10 +2,10 @@
     "builders": [
         {
             "type": "openstack",
-            "source_image_name": "Ubuntu 14.04",
+            "source_image_name": "Ubuntu 16.04",
             "ssh_username": "ubuntu",
             "openstack_provider": "nova",
-            "image_name": "trusty-chef",
+            "image_name": "xenial-chef",
             "ssh_ip_version": "6",
             "flavor": "1"
         }
