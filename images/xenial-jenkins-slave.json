@@ -1,0 +1,31 @@
+{
+    "builders": [
+        {
+            "type": "openstack",
+            "source_image_name": "Ubuntu 16.04",
+            "ssh_username": "ubuntu",
+            "openstack_provider": "nova",
+            "image_name": "xenial-jenkins-slave",
+            "ssh_ip_version": "6",
+            "flavor": "1"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/common.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/docker.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/packer.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/novaclient.sh"
+        }
+    ]
+}
