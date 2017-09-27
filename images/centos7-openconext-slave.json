@@ -1,0 +1,27 @@
+{
+    "builders": [
+        {
+            "type": "openstack",
+            "source_image_name": "CentOS 7",
+            "ssh_username": "centos",
+            "openstack_provider": "nova",
+            "image_name": "centos7-openconext-slave",
+            "ssh_ip_version": "6",
+            "flavor": "1"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/centos/common.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/centos/java.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/centos/php.sh"
+        }
+    ]
+}
