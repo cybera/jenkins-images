@@ -7,7 +7,8 @@
             "openstack_provider": "nova",
             "image_name": "centos7-openconext-slave",
             "ssh_ip_version": "6",
-            "flavor": "2"
+            "flavor": "2",
+            "ssh_pty" : true
         }
     ],
     "provisioners": [
