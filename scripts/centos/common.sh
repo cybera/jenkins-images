@@ -68,10 +68,8 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
 EOF
 
-sudo tee <<EOF /etc/cloud/01_hostname.cfg
+sudo tee <<EOF /etc/cloud/cloud.cfg.d/01_hostname.cfg
 #cloud-config
-hostname: openconext-build
-fqdn: openconext-build.dev.local
 manage_etc_hosts: true
 EOF
 
