@@ -16,7 +16,3 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece38
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
-
-wget https://phar.phpunit.de/phpunit-4.8.phar
-chmod +x phpunit-4.8.phar
-sudo mv phpunit-4.8.phar /usr/local/bin/phpunit
