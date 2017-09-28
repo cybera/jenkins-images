@@ -26,6 +26,10 @@
         },
         {
             "type": "shell",
+            "script": "scripts/centos/nodejs.sh"
+        },
+        {
+            "type": "shell",
             "script": "scripts/centos/mysql.sh"
         },
         {
