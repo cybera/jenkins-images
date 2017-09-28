@@ -80,4 +80,5 @@ sudo systemctl start memcached
 sudo systemctl enable memcached
 
 sudo mkdir -p /repository/{maven,php}
+sudo chmod -R 777 /repository
 sudo rm -rf /{root,home/centos}/{.ssh,.bash_history} && history -c
