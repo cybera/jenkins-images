@@ -23,6 +23,10 @@
         {
             "type": "shell",
             "script": "scripts/centos/php.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/centos/openstacktools.sh"
         }
     ]
 }

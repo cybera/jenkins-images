@@ -70,6 +70,10 @@ EOF
 
 sudo yum -y update
 
+# Memcached needed for Janus tests
 sudo systemctl start memcached
 sudo systemctl enable memcached
+
+sudo mkdir -p /repository/{maven,php}
+sudo chown jenkins -R /repository
 sudo rm -rf /{root,home/centos}/{.ssh,.bash_history} && history -c
