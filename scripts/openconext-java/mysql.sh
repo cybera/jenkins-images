@@ -3,6 +3,7 @@ sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mariadb.mirror.col
 
 sudo apt-get update
 sudo apt-get install -y mariadb-server
+sudo apt-get install -y mariadb-server python-mysqldb
 
 sudo tee <<EOF /etc/my.cnf.d/server.cnf >/dev/null
 [server]

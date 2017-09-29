@@ -1,3 +1,5 @@
+export DEBIAN_FRONTEND="noninteractive"
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install wget git unzip build-essential software-properties-common
