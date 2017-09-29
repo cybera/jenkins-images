@@ -1,3 +1,7 @@
+# Disable selinux
+sudo sed -i 's/^SELINUX=.*/SELINUX=permissive/g' /etc/sysconfig/selinux
+sudo /usr/sbin/setenforce 0
+
 sudo yum -y update
 sudo yum -y upgrade
 sudo yum -y install wget epel-release git unzip gcc gcc-c++ make openssl-devel memcached
