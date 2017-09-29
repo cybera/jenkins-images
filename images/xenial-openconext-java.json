@@ -1,0 +1,35 @@
+{
+    "builders": [
+        {
+            "type": "openstack",
+            "source_image_name": "Ubuntu 16.04",
+            "ssh_username": "ubuntu",
+            "openstack_provider": "nova",
+            "image_name": "xenial-openconext-java",
+            "ssh_ip_version": "6",
+            "flavor": "2"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/openconext/common.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/openconext/java.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/openconext/nodejs.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/openconext/mysql.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/openconext/openstacktools.sh"
+        }
+    ]
+}

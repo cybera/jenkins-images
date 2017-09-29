@@ -18,10 +18,6 @@
         },
         {
             "type": "shell",
-            "script": "scripts/centos/java.sh"
-        },
-        {
-            "type": "shell",
             "script": "scripts/centos/php.sh"
         },
         {
