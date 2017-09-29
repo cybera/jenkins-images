@@ -13,23 +13,23 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "scripts/openconext/common.sh"
+            "script": "scripts/openconext-java/common.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext/java.sh"
+            "script": "scripts/openconext-java/java.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext/nodejs.sh"
+            "script": "scripts/openconext-java/nodejs.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext/mysql.sh"
+            "script": "scripts/openconext-java/mysql.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext/openstacktools.sh"
+            "script": "scripts/openconext-java/openstacktools.sh"
         }
     ]
 }

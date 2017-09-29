@@ -14,23 +14,23 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "scripts/centos/common.sh"
+            "script": "scripts/openconext-php/common.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/centos/php.sh"
+            "script": "scripts/openconext-php/php.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/centos/nodejs.sh"
+            "script": "scripts/openconext-php/nodejs.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/centos/mysql.sh"
+            "script": "scripts/openconext-php/mysql.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/centos/openstacktools.sh"
+            "script": "scripts/openconext-php/openstacktools.sh"
         }
     ]
 }
