@@ -4,7 +4,7 @@ sudo /usr/sbin/setenforce 0
 
 sudo yum -y update
 sudo yum -y upgrade
-sudo yum -y install wget epel-release git unzip gcc gcc-c++ make openssl-devel memcached
+sudo yum -y install wget epel-release git unzip gcc gcc-c++ make openssl-devel memcached psmisc
 sudo rpm -i http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 
 sudo tee <<EOF /etc/yum.repos.d/remi.repo >/dev/null
