@@ -14,23 +14,27 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "scripts/openconext-php/common.sh"
+            "script": "scripts/openconext/common.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext-php/php.sh"
+            "script": "scripts/openconext/java.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext-php/nodejs.sh"
+            "script": "scripts/openconext/php.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext-php/mysql.sh"
+            "script": "scripts/openconext/nodejs.sh"
         },
         {
             "type": "shell",
-            "script": "scripts/openconext-php/openstacktools.sh"
+            "script": "scripts/openconext/mysql.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/openconext/openstacktools.sh"
         }
     ]
 }
