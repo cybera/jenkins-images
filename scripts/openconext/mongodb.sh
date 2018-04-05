@@ -7,6 +7,7 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
 EOF
 
+sudo yum -y update
 sudo yum -y install mongodb-org python2-pip
 
 sudo systemctl enable mongod
