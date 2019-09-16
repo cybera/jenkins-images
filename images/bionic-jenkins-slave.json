@@ -1,0 +1,31 @@
+{
+    "builders": [
+        {
+            "type": "openstack",
+            "source_image_name": "Ubuntu 18.04",
+            "ssh_username": "ubuntu",
+            "openstack_provider": "nova",
+            "image_name": "bionic-jenkins-slave",
+            "ssh_ip_version": "6",
+            "flavor": "1"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/common.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/docker.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/packer.sh"
+        },
+        {
+            "type": "shell",
+            "script": "scripts/ubuntu/novaclient.sh"
+        }
+    ]
+}
