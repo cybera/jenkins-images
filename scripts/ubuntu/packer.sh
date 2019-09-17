@@ -1,4 +1,4 @@
-sudo apt install -u unzip
+sudo apt-get install -u unzip
 
 curl -L https://releases.hashicorp.com/packer/1.0.3/packer_1.0.3_linux_amd64.zip >/tmp/packer.zip &&
     unzip /tmp/packer.zip -d /tmp &&
