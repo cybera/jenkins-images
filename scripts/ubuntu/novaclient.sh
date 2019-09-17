@@ -1,1 +1,1 @@
-sudo apt install -y python-novaclient
+sudo apt-get install -y python-novaclient
